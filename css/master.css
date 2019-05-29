@@ -48,6 +48,7 @@ body {
    font-size: 16px;
 }
 
+
 .login-box input[type="submit"] {
    border: none;
    outline: none;
@@ -68,3 +69,20 @@ body {
 .login-box a:hover {
    color: #fff;
  }
+ h2{
+  border: none;
+  outline: none;
+  height: 20px;
+  color: #fff;
+  background: #124D78;
+  font-size: 18px;
+  border-radius: 20px;
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+ }
+ h2:hover {
+  cursor: pointer;
+  background: rgb(134, 189, 231)  ;
+  color: rgb(255, 255, 255);
+}
