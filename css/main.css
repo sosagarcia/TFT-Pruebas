@@ -45,6 +45,11 @@ nav > ul li {
 	display:table-cell;
 }
 
+nav > ul:hover{
+
+	opacity: 1;
+}
+
 /*Sub-menu*/
 nav > ul > li:hover > ul {
 	display:block;
@@ -54,6 +59,7 @@ nav > ul > li > ul {
 	display:block;
 	position:absolute;
 	background:#000;
+	opacity: 0.7;
 	left:0;
 	right:0;
 	overflow:hidden;
