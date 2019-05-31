@@ -3,18 +3,22 @@
 	padding:0;
 }
 body {
-  background: url(../img/fondo1.jpeg) no-repeat center top;
+	background: url(../img/Fondo1b.jpeg) no-repeat center top;
+
 }
+/*Header*/
 
 header {
+	position: relative;
 	margin-top:10px;
     width: 100%;
     overflow: hidden;
     height: 150px;
-    position: relative;
+    
 }
 
 nav {
+	position: absolute;
     top:-20px;
     position: absolute;
     left:0;
@@ -123,4 +127,47 @@ nav ul li a .cuarto {
 
 nav ul li a .quinto {
 	background:#37a4d9;
+}
+
+div#general{
+	margin: auto;
+	width: 960px;
+	height: 800px;
+	background-color: red;
+
+}
+div#Titulo{
+	float: left;
+	width: 640px;
+	height: 200px;
+	background-color: blue;
+
+}
+
+
+div#lista{
+	float: right;
+	width: 300px;
+	height: 500px;
+	background-color: green;
+
+}
+
+/*Acciones*/
+
+div#cuerpo{
+
+	width: 640px;
+	height: 580px;
+	background-color: purple;
+
+}
+
+h1 {
+	margin: 0;
+	padding: 0 0 20px;
+	background: #000;
+	text-align: center;
+	font-size: 30px;
+	color: white;
 }
