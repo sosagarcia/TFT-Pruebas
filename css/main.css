@@ -9,18 +9,19 @@ body {
 /*Header*/
 
 header {
-	position: relative;
-	margin-top:10px;
-    width: 100%;
-    overflow: hidden;
-    height: 150px;
+	width: 100%;
+	height: 120px;
+	text-align: center;
+	display: flex;
+	line-height: 120px;
+	position: sticky;
+	top: 0;
     
 }
 
 nav {
 	position: absolute;
     top:-20px;
-    position: absolute;
     left:0;
     right:0;
 	margin:20px auto;
@@ -36,6 +37,7 @@ nav > ul {
 	display:table;
 	width:100%;
 	background:#000;
+	opacity: 0.7;
 	position:relative;
 }
 
@@ -111,29 +113,37 @@ nav > ul > li > a:hover > span {
 /*Colores*/
 nav ul li a .primero {
 	background:#0e5061;
+	opacity: 0.7;
 }
 
 nav ul li a .segundo {
 	background:#5da5a2;
+	opacity: 0.7;
 }
 
 nav ul li a .tercero {
 	background:#f25724;
+	opacity: 0.7;
 }
 
 nav ul li a .cuarto {
 	background:#174459;
+	opacity: 0.7;
 }
 
 nav ul li a .quinto {
 	background:#37a4d9;
+	opacity: 0.7;
 }
+
+/*Acciones*/
 
 div#general{
 	margin: auto;
 	width: 960px;
 	height: 800px;
-	background-color: red;
+	background-color: white;
+	
 
 }
 div#Titulo{
@@ -141,6 +151,7 @@ div#Titulo{
 	width: 640px;
 	height: 200px;
 	background-color: blue;
+	
 
 }
 
@@ -150,10 +161,10 @@ div#lista{
 	width: 300px;
 	height: 500px;
 	background-color: green;
+	
 
 }
 
-/*Acciones*/
 
 div#cuerpo{
 
@@ -170,4 +181,27 @@ h1 {
 	text-align: center;
 	font-size: 30px;
 	color: white;
+}
+
+
+/*Camara*/
+
+div#Titulo1{
+	float: top;
+	
+	height: 200px;
+	background-color: blue;
+
+}
+div#cuerpo1{
+	float: right;
+	
+	width: 640px;
+	height: 580px;
+	background-color: purple;
+
+}
+.video{
+	
+	float: right
 }
