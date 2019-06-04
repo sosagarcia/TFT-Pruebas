@@ -22,4 +22,9 @@ for i in range(0, 5):
     time.sleep(1)
 
 # Y liberamos los GPIO
+
 GPIO.cleanup()
+# archivo-salida.py
+f = open('holamundo1.txt', 'w')
+f.write('hola mundo1')
+f.close()
