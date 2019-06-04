@@ -70,7 +70,7 @@
                 <button type="submit">Submit</button>
                 <button type="submit" formtarget="framename">Submit to a new window</button>
             </form>
-            <a class="btn" href="../../LED/index.php"> Prueba Botones</a>
+            <a class="btn" href="../../LED/index.php"> Prueba Botoness</a>
         </div>
 
 

@@ -12,7 +12,7 @@
 
 
 
- <br><a class="btn" href="../Main/categorias/acciones.html"> Volavesr</a>
+ <br><a class="btn" href="../Main/categorias/acciones.html"> Volver</a>
 
  
 
