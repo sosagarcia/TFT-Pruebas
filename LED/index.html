@@ -13,7 +13,7 @@
         <input type="submit" name="parpadear18" value="Parpadear">
 
         <br></br>
-        <a class="btn" href="../Main/categorias/acciones.html"> Volvesr</a>
+        <a class="btn" href="../Main/categorias/acciones.html"> Volavesr</a>
 
 
 </body>
@@ -25,13 +25,14 @@
 // Funciones PHP del pin GPIO 18
 
   if ($_POST[encender18]) { 
-   $a- exec("sudo python3 /var/www/html/TFT-Pruebas/LED/18/enciende.py");
+    system("gpio -g mode 18 out");
+		system("gpio -g write 18 1");
    echo $a;
   }
 
   if ($_POST[apagar18]) { 
-   $a- exec("sudo python3.5 /var/www/html/TFT-Pruebas/LED/18/apaga.py");
-   echo $a;
+    system("gpio -g mode 18 out");
+		system("gpio -g write 18 1");
   }
 
   if ($_POST[parpadear18]) { 
