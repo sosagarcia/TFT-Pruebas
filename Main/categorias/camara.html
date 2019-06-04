@@ -23,7 +23,7 @@
                                         class="icon"></span>Cámara</a></li>
                         <li><a href="#"><span class="uno"><img src="../../img/PNG/32px/039-file-text2.png"
                                         class="icon"></span>Datos</a></li>
-                        <li><a href="acciones.html"><span class="uno"><img src="../../img/PNG/32px/086-keyboard.png"
+                        <li><a href="acciones.php"><span class="uno"><img src="../../img/PNG/32px/086-keyboard.png"
                                         class="icon"></span>Acciones</a></li>
                         <li><a href="#"><span class="uno"><img src="../../img/PNG/32px/156-stats-dots.png"
                                         class="icon"></span>Estadísticas</a></li>
