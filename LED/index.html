@@ -1,51 +1,44 @@
-<HTML>
+<html>
 
-<HEAD>
+<head>
+    <!--index.php-->
+</head>
 
-<TITLE>TITULO</TITLE>
+<body>
 
-</HEAD>
+    <!--GPIO17-->
+    <form action="" method="post">
+        GPIO 18&nbsp;<input type="submit" name="encender18" value="Encender">
+        <input type="submit" name="apagar18" value="Apagar">
+        <input type="submit" name="parpadear18" value="Parpadear">
 
-<BODY>
+        <br></br>
 
-HOla
 
-<H1>Botones </H1>
+</body>
 
-<P> <IMG SRC= "./felix.gif "ALIGN= "MIDDLE " ALT= "EL Gato Felix ">Hola.
+</html>
 
-<P>Esto es un parrafo con informacion
+<?php
 
-super importante. Notese que las lineas salen pegadas aun dejando
+// Funciones PHP del pin GPIO 18
 
-espacios, saltos de linea, etc. <BR> &#161 Si pongo esto
+  if ($_POST[encender18]) { 
+   $a- exec("sudo python 18/enciende.py");
+   echo $a;
+  }
 
-si <STRONG>cambia </STRONG> de linea!
+  if ($_POST[apagar18]) { 
+   $a- exec("sudo python 18/apaga.py");
+   echo $a;
+  }
 
-<P>Otro parrafo, esto ya es un poco rollo.
+  if ($_POST[parpadear18]) { 
+   $a- exec("sudo python 18/parpadea.py");
+   echo $a;
+  }
 
-<H3>Pongamos un subtítulo<H3>
+// Fin de las funciónes del pin GPIO 17
 
-<a class="boton_personalizado" href="E.php">Soy un botón</a>
 
-<HR>
-
-<UL>
-
-<LI> Esto es una lista no ordenada.
-
-<LI> Las listas quedan mejor si tienen varios elementos.
-
-</UL>
-
-Me voy al <A HREF= "http://www.iac.es/home.html ">IAC</A>.
-
-<P>Vamos a crear un <EM>ancla </EM>, o lo que es lo mismo, un <A NAME="pepe">anchor.</A>
-
-.....................................................
-
-.....................................................
-
-</BODY>
-
-</HTML>
+?>

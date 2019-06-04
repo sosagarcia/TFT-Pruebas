@@ -72,6 +72,10 @@ nav > ul > li > ul {
 
 }
 
+nav > ul > li > ul:hover{
+	opacity: 0.9;
+}
+
 nav > ul li a {
 	color:#fff;
 	display:block;
@@ -90,6 +94,7 @@ nav > ul li a {
 
 nav > ul > li > ul > li a:hover {
 	background:#5da5a2;
+	
 }
 
 nav > ul > li > a span {
