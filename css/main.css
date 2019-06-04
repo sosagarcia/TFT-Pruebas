@@ -194,6 +194,25 @@ h1 {
 	color: white;
 }
 
+.btn{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+		text-decoration: none;
+		padding: 10px;
+		font-weight: 600;
+		font-size: 20px;
+		color: #ffffff;
+		background-color: #1883ba;
+		border-radius: 6px;
+		border: 2px solid #0016b0;
+	 }
+	 .btn:hover {
+		 cursor: pointer;
+		color: #18ba20;
+		background-color: #ffffff;
+	}
+	
 
 /*Camara*/
 
