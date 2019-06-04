@@ -63,15 +63,13 @@
             <form class="LED" action="../../LED/E1.php" method="POST">
                 <button type="submit" name="buttonLed">Led Off</button>
             </form>
-            <form action="" method="post">
-                 GPIO 18&nbsp;<input type="submit" name="encender18" value="Encender">
-                <input type="submit" name="apagar18" value="Apagar">
-                <input type="submit" name="parpadear18" value="Parpadear">
+
+            <form action="/action_page.php" method="get">
+                First name: <input type="text" name="fname"><br>
+                Last name: <input type="text" name="lname"><br>
+                <button type="submit">Submit</button>
+                <button type="submit" formtarget="framename">Submit to a new window</button>
             </form>
-
-
-
- <br>
             <a class="btn" href="../../LED/index.php"> Prueba Botoness</a>
         </div>
 
@@ -83,25 +81,3 @@
 </body>
 
 </html>
-
-<?php
-
-// Funciones PHP del pin GPIO 18
-
-  if ($_POST[encender18]) { 
-   $a- exec("sudo python /var/www/html/TFT-Pruebas/LED/18/enciende.py");
-   echo $a
-  }
-
-  if ($_POST[apagar18]) { 
-   $a- exec("sudo python /var/www/html/TFT-Pruebas/LED/18/apaga.py");
-   echo $a;
-  }
-
-  if ($_POST[parpadear18]) { 
-   $a- exec("sudo python /var/www/html/TFT-Pruebas/LED/18/parpadea.py");
-   echo $a;
-  }
-
-
-?>
