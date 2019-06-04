@@ -70,7 +70,7 @@
                 <input type="submit" name="apagar18" value="Apagar">
                 <input type="submit" name="parpadear18" value="Parpadear">
             </form>
-            <a class="btn" href="../../LED/index.php"> Prueba Botonesss</a>
+            <a class="btn" href="../../LED/index.php"> Prueba Botoness</a>
         </div>
 
 
