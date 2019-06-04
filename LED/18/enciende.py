@@ -9,4 +9,3 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(18, GPIO.OUT)
 #Encendemos el led
 GPIO.output(18, GPIO.HIGH)
-GPIO.cleanup()
