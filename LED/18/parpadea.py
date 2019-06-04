@@ -14,8 +14,8 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(18, GPIO.OUT)
 
 # Encendemos y apagamos el led 5 veces
-tiempo = 0.025
-for i in range(0, 75):
+tiempo = 600
+for i in range(0, 4):
 
     GPIO.output(18, GPIO.HIGH)
     time.sleep(tiempo)
