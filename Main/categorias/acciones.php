@@ -64,11 +64,11 @@
                 <button type="submit" name="buttonLed">Led Off</button>
             </form>
 
-            <form action="/action_page.php" method="get">
-                First name: <input type="text" name="fname"><br>
-                Last name: <input type="text" name="lname"><br>
-                <button type="submit">Submit</button>
-                <button type="submit" formtarget="framename">Submit to a new window</button>
+              <!--GPIO17--> 
+            <form action="" method="post">
+                 GPIO 18&nbsp;<input type="submit" name="encender18" value="Encender">
+                <input type="submit" name="apagar18" value="Apagar">
+                <input type="submit" name="parpadear18" value="Parpadear">
             </form>
             <a class="btn" href="../../LED/index.php"> Prueba Botoness</a>
         </div>
