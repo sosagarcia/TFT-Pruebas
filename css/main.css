@@ -3,7 +3,7 @@
 	padding:0;
 }
 body {
-	background: url(../img/Fondo1b.jpeg) no-repeat center top;
+	background: url(../img/Fondo1b.jpeg) no-repeat center top fixed;
 
 }
 /*Header*/
@@ -245,5 +245,16 @@ div#cuerpo2{
 }
 .graf{
 	border:1px solid #000000;
+
+}
+
+/*Estadísticas*/
+
+div#general3{
+	margin: auto;
+	width: 960px;
+	height: 800px;
+	background-color: rgb(255, 255, 255) ;
+	
 
 }

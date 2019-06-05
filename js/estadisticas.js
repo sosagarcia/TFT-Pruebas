@@ -48,10 +48,6 @@ function drawPieSlice(ctx, centerX, centerY, radius, startAngle, endAngle, color
 
 
 
-
-
-
-
 /*drawLine(_ctx, 100, 100, 200, 200);
 
 drawArc(_ctx, 150, 150, 150, 0, Math.PI / 3);
