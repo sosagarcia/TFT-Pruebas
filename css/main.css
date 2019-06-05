@@ -235,3 +235,15 @@ div#cuerpo1{
 	
 	float: right
 }
+
+
+div#cuerpo2{
+
+	width: 640px;
+	height: 580px;
+
+}
+.graf{
+	border:1px solid #000000;
+
+}

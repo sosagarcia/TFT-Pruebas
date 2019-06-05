@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejemplo de Acciones </title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="icon" type="image/png" href="../../img/PNG/64px/433-github.png" sizes="64x64">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../main.html"><span class="primero"><img src="../../img/PNG/64px/001-home.png"
+                                class="icon"></span>Inicio</a></li>
+                <li><a href="#"><span class="segundo"><i class="icon icon-map"></i></span>Categorías</a>
+                    <ul>
+                        <li><a href="camara.html"><span class="uno"><img src="../../img/PNG/32px/021-video-camera.png"
+                                        class="icon"></span>Cámara</a></li>
+                        <li><a href="#"><span class="uno"><img src="../../img/PNG/32px/039-file-text2.png"
+                                        class="icon"></span>Datos</a></li>
+                        <li><a href="acciones.php"><span class="uno"><img src="../../img/PNG/32px/086-keyboard.png"
+                                        class="icon"></span>Acciones</a></li>
+                        <li><a href="estadisticas.html"><span class="uno"><img
+                                        src="../../img/PNG/32px/156-stats-dots.png" class="icon"></span>Estadísticas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#"><span class="tercero"><img src="../../img/PNG/64px/001-home.png"
+                                class="icon"></span>Servicios</a>
+                </li>
+                <li><a href="#"><span class="cuarto"><img src="../../img/PNG/32px/001-home.png"
+                                class="icon"></span>Acerca
+                        de</a>
+                </li>
+                <li><a href="../../index.html"><span class="quinto"><img src="../../img/PNG/64px/433-github.png"
+                                class="icon"></i></span>Salir</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script>
+        let myChart = document.getElementById('myChart').getContext('2d');
+
+        // Global Options
+        Chart.defaults.global.defaultFontFamily = 'Lato';
+        Chart.defaults.global.defaultFontSize = 18;
+        Chart.defaults.global.defaultFontColor = '#777';
+
+        let massPopChart = new Chart(myChart, {
+            type: 'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+            data: {
+                labels: ['Boston', 'Worcester', 'Springfield', 'Lowell', 'Cambridge', 'New Bedford'],
+                datasets: [{
+                    label: 'Population',
+                    data: [
+                        617594,
+                        181045,
+                        153060,
+                        106519,
+                        105162,
+                        95072
+                    ],
+                    //backgroundColor:'green',
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.6)',
+                        'rgba(54, 162, 235, 0.6)',
+                        'rgba(255, 206, 86, 0.6)',
+                        'rgba(75, 192, 192, 0.6)',
+                        'rgba(153, 102, 255, 0.6)',
+                        'rgba(255, 159, 64, 0.6)',
+                        'rgba(255, 99, 132, 0.6)'
+                    ],
+                    borderWidth: 1,
+                    borderColor: '#777',
+                    hoverBorderWidth: 3,
+                    hoverBorderColor: '#000'
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Largest Cities In Massachusetts',
+                    fontSize: 25
+                },
+                legend: {
+                    display: true,
+                    position: 'right',
+                    labels: {
+                        fontColor: '#000'
+                    }
+                },
+                layout: {
+                    padding: {
+                        left: 50,
+                        right: 0,
+                        bottom: 0,
+                        top: 0
+                    }
+                },
+                tooltips: {
+                    enabled: true
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
